@@ -132,7 +132,7 @@ def closeTab():
 
 if __name__ == "__main__": 
     while True:
-        print("Choose Bitch!\n0. Exit\n1. Open Browser\n2. Open New Tab\n3. Switch Tab\n4. Close Tab")
+        print("Choose!\n0. Exit\n1. Open Browser\n2. Open New Tab\n3. Switch Tab\n4. Close Tab")
         ch = input()
         func = makeChoiceAndReturnFunction(ch)
         locals()[func]()
