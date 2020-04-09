@@ -95,8 +95,7 @@ def openBrowser():
     tabName = "tab"+str(i)
     tabList.openTab(tabName)
     tabList.printCurrentTab()
-    tabList.getPreviousTab()
-    # print("Browser Opened with Tab Name " + tabName)
+    print("Browser Opened with Tab Name " + tabName)
     return
 
 def exitFromProgram():
@@ -108,8 +107,6 @@ def openNewTab():
     name = input("Tab Name?\n")
     tabList.openTab(name)
     tabList.printCurrentTab()
-    tabList.getPreviousTab()
-    # tabList.traverseTabs()
     return
 
 def switchTab():
@@ -119,15 +116,11 @@ def switchTab():
     print("switching to..", tabName)
     tabList.switchTabs(tabName)
     tabList.printCurrentTab()
-    tabList.getPreviousTab()
-    # tabList.traverseTabs()
 
 def closeTab():
     global tabList
-    # print(f"You can Only delete {tabList.getCurrentTab()} as it is the current tab!")
     tabList.closeTab(tabList.getCurrentTab().data)
     tabList.printCurrentTab()
-    tabList.getPreviousTab()
     
 
 if __name__ == "__main__": 
